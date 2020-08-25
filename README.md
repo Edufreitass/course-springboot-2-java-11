@@ -152,4 +152,4 @@ Product p4 = new Product(null, "PC Gamer", "Donec aliquet odio ac rhoncus cursus
 Product p5 = new Product(null, "Rails for Dummies", "Cras fringilla convallis sem vel faucibus.", 100.99, "");
 ```
 
-
+## Many-to-many association with JoinTable
