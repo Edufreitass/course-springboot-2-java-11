@@ -129,3 +129,15 @@ Order o3 = new Order(null, Instant.parse("2019-07-22T15:21:22Z"), u1);
 ```
 
 ## OrderStatus enum
+
+## Category
+
+**Objects:**
+
+```java
+Category cat1 = new Category(null, "Electronics");
+Category cat2 = new Category(null, "Books");
+Category cat3 = new Category(null, "Computers");
+```
+
+
