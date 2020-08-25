@@ -172,3 +172,5 @@ OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
 ```
 
 ## Product-OrderItem one-to-many association
+
+## Payment, one-to-one association
