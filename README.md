@@ -127,3 +127,5 @@ Order o1 = new Order(null, Instant.parse("2019-06-20T19:53:07Z"), u1);
 Order o2 = new Order(null, Instant.parse("2019-07-21T03:42:10Z"), u2);
 Order o3 = new Order(null, Instant.parse("2019-07-22T15:21:22Z"), u1);
 ```
+
+## OrderStatus enum
