@@ -291,3 +291,17 @@ jwt.expiration=3600000
 ```
 - Update application.properties: spring.profiles.active=dev
 - Run application
+
+## Get SQL script from local PostgreSQL
+
+- PgAdmin: get SQL script:
+  - Select database
+  - Tools -> Backup
+    - Format: Plain
+    - Encoding: UTF8
+    - Dump options:
+       - Only schema: YES
+       - Blobs: NO
+       - Do not save: (ALL)
+       - Verbose messages: NO
+- Delete instructions before CREATE statements
