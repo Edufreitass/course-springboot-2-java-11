@@ -231,3 +231,9 @@ OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
 - UserService
   - EmptyResultDataAccessException
   - DataIntegrityViolationException
+
+## Exception handling - update
+
+**Checklist:**
+- UserService
+  - EntityNotFoundException
