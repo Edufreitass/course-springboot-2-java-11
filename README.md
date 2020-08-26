@@ -259,3 +259,35 @@ OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
   - Start pgAdmin
   - Databases -> Create -> Database
     - Encoding: UTF8
+
+## Dev profile
+
+**Checklist:**
+- PgAdmin: create local database: create database springboot_course
+- Add PostgreSQL Maven dependency
+
+```xml
+<dependency>
+       <groupId>org.postgresql</groupId>
+       <artifactId>postgresql</artifactId>
+       <scope>runtime</scope>
+</dependency>
+```
+
+- Create file: application-dev.properties
+
+```properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/springboot_course
+spring.datasource.username=postgres
+spring.datasource.password=1234567
+
+spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+
+jwt.secret=MYJWTSECRET
+jwt.expiration=3600000
+```
+- Update application.properties: spring.profiles.active=dev
+- Run application
