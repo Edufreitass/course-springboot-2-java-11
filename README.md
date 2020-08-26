@@ -186,11 +186,15 @@ OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
 **Test:**
 ```json
 {
-"name": "Bob Brown",
-"email": "bob@gmail.com",
-"phone": "977557755",
-"password": "123456"
+   "name": "Bob Brown",
+   "email": "bob@gmail.com",
+   "phone": "977557755",
+   "password": "123456"
 }
 ```
 
+## User delete
 
+**Checklist:**
+- UserService
+- UserResource
