@@ -32,4 +32,18 @@ public class UserService {
 		repository.deleteById(id);
 	}
 
+	public User update(Long id, User obj) {
+		// getOne instancia um User,porém ele nao vai no banco de dados,
+		// ele apenas deixa um objeto monitorado pelo JPA
+		User entity = repository.getOne(id);
+		updateData(entity, obj);
+		return repository.save(entity);
+	}
+
+	private void updateData(User entity, User obj) {
+		entity.setName(obj.getName());
+		entity.setEmail(obj.getEmail());
+		entity.setPhone(obj.getPhone());
+	}
+
 }
