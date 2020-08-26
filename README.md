@@ -237,3 +237,12 @@ OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
 **Checklist:**
 - UserService
   - EntityNotFoundException
+
+## Create Heroku app & provision PostgreSQL
+
+**Checklist:**
+- Heroku Sign Up
+- Create app
+- Provision PostgreSQL
+  - App dashboard -> Resources
+  - Search "postgres" -> select "Heroku Postgres"
