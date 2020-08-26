@@ -222,3 +222,12 @@ OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
 - NEW CLASS: resources.exceptions.StandardError
 - NEW CLASS: resources.exceptions.ResourceExceptionHandler
 - UserService
+
+## Exception handling - delete
+
+**Checklist:**
+- NEW CLASS: services.exceptions.DatabaseException
+- ResourceExceptionHandler
+- UserService
+  - EmptyResultDataAccessException
+  - DataIntegrityViolationException
