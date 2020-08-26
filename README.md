@@ -177,4 +177,20 @@ OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
 
 ## Subtotal & Total methods
 
+## User insert
+
+**Checklist:**
+- UserService
+- UserResource
+
+**Test:**
+```json
+{
+"name": "Bob Brown",
+"email": "bob@gmail.com",
+"phone": "977557755",
+"password": "123456"
+}
+```
+
 
