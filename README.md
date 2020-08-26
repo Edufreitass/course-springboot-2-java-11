@@ -305,3 +305,28 @@ jwt.expiration=3600000
        - Do not save: (ALL)
        - Verbose messages: NO
 - Delete instructions before CREATE statements
+
+## Run SQL Script
+
+**Checklist:**
+- App dashboard -> Settings - > Config Vars
+
+        EXAMPLE:
+             postgres://wavglvupbdad:358f443aafe452eca4c58fbc15d02e50b08130c7aaea3aff6c4f59c
+             13f9abb@ec2-23-21-106-266.compute-1.amazonaws.com:5432/d7u9ub86cdsu
+             
+             user: wavglvupbdad
+             
+             password: 358f443aafe452eca4c58fbc15d02e50b08130c7aaea3aff6c4f59c13f9abb
+             
+             server: ec2-23-21-106-266.compute-1.amazonaws.com
+             
+             port: 5432
+             
+             database: d7u9ub86cdsu
+
+- PgAdmin: Servers -> Create -> Server
+  - Advanced -> DB rescriction: (database)
+- Database -> Query Tool
+  - Load and run SQL Script
+
