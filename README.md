@@ -198,3 +198,20 @@ OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
 **Checklist:**
 - UserService
 - UserResource
+
+## User update
+
+**Checklist:**
+- UserService
+- UserResource
+
+**Test:**
+```json
+{
+   "name": "Bob Brown",
+   "email": "bob@gmail.com",
+   "phone": "977557755"
+}
+```
+
+
