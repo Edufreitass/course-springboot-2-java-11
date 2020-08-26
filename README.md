@@ -214,4 +214,11 @@ OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
 }
 ```
 
+## Exception handling - findById
 
+**Checklist:**
+
+- NEW CLASS: services.exceptions.ResourceNotFoundException
+- NEW CLASS: resources.exceptions.StandardError
+- NEW CLASS: resources.exceptions.ResourceExceptionHandler
+- UserService
