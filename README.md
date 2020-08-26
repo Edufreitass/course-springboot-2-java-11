@@ -246,3 +246,16 @@ OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
 - Provision PostgreSQL
   - App dashboard -> Resources
   - Search "postgres" -> select "Heroku Postgres"
+
+## Install local PostgreSQL
+
+**Checklist:**
+- Download and install: https://www.postgresql.org/download/
+  - Super user: postgres
+  - Password: 1234567
+  - Port: 5432
+- Start/stop service: Task manager -> Services
+- Check instalation
+  - Start pgAdmin
+  - Databases -> Create -> Database
+    - Encoding: UTF8
