@@ -330,3 +330,31 @@ jwt.expiration=3600000
 - Database -> Query Tool
   - Load and run SQL Script
 
+## Install Heroku CLI
+
+- Download page: https://devcenter.heroku.com/articles/heroku-cli#download-and-install
+- After the download is complete, open a terminal and run **heroku -v**
+- The answer should be this **heroku/7.42.12 win32-x64 node-v12.16.2**
+
+## Deploy app to Heroku
+
+- Heroku app dashboard -> Deploy
+
+      heroku git:remote -a myapp
+      git remote -v
+            
+- Setup Heroku app Config Vars
+  - DATABASE_URL
+  - JWT_EXPIRATION
+  - JWT_SECRET
+- Create: application-prod.properties
+
+```properties
+spring.datasource.url=${DATABASE_URL}
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=false
+spring.jpa.properties.hibernate.format_sql=false
+
+jwt.secret=${JWT_SECRET}
+jwt.expiration=${JWT_EXPIRATION}
+```
